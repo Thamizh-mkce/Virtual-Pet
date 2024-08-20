@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#pet {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  position: relative;
+}
+
+#pet::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  top: 30px;
+  left: 25px;
+}
+
+#pet::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  top: 30px;
+  right: 25px;
+}
+
+#pet.happy {
+  background-color: #ffcc00;
+}
+
+#pet.sad {
+  background-color: #cccccc;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
